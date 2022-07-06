@@ -12,7 +12,9 @@ function App() {
     setCartIsShown(false)
   }
   return (
+    
     <CartProvider>
+      hello
       {cartIsShown && <Cart onCloseCart={handleCloseCart}></Cart>}
       <Header onShowCart={handleShowCart}></Header>
       <main>
